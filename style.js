@@ -33,7 +33,7 @@ const _style = [{
 }, {
   "selector": "edge",
   "style": {
-    "curve-style": "haystack", // bezier, taxi, ...
+    "curve-style": "haystack",
     "haystack-radius": "0.5",
     "opacity": "0.4",
     "line-color": "#bbb",
@@ -43,14 +43,18 @@ const _style = [{
 }, {
   "selector": "node.magic",
   "style": {
-    // your magic lens effects for nodes go here! 
-    // See https://js.cytoscape.org/#style for all options
+    "border-width": "3px",
+    "border-color": "#f90",
+    "background-color": "#ffcc44",
+    "text-outline-color": "#cc8800"
   }
 }, {
   "selector": "edge.magic",
   "style": {
-    // your magic lens effects for edges go here! 
-    // See https://js.cytoscape.org/#style for all options
+    "line-color": "#f60",
+    "opacity": "1",
+    "width": "mapData(weight, 0, 1, 2, 10)",
+    "z-index": "20"
   }
 }]
 

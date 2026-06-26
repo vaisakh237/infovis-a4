@@ -1,13 +1,12 @@
 /* If you need to make some style changes to the plain html, this is the place! */
 
-
 .cy {
   /* aligns the svg with the canvas */
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  right: 12em; 
+  right: 12em;
 }
 
 .config {
@@ -22,3 +21,17 @@
   z-index: 1;
 }
 
+/* Lens circle styling */
+#lens {
+  stroke: #f90;
+  stroke-width: 2px;
+  stroke-dasharray: 6 3;
+  fill: rgba(255, 153, 0, 0.06);
+  pointer-events: none;
+}
+
+/* Config panel heading */
+#config h3 {
+  border-bottom: 1px solid #444;
+  padding-bottom: 8px;
+}
